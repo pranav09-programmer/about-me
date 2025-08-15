@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Contact Me </title>
+  </head>
+  <body>
+    <h1>Details</h1>
+    <form action="#" method="post" novalidate>
+        <fieldset>
+            <legend> Your details </legend>
+
+            <label for="fname">Full Name</label><br>
+            <input id="fname" name="fname" type="text" placeholder="Pranav Reddy" required minlength="2" maxlength="60" autocomplete="name"><br><br>
+
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="email" placeholder="pranavreddy627@gmail.com" required autocomplete="email"><br><br>
+
+            <label for="phone">Phone</label><br>
+            <input id="phone" name="phone" type="tel" placeholder="+1 484 761 4314" pattern="^[+0-9 ()-]{7,20}$" autocomplete="tel"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Message</legend>
+
+            <label for="subject">Subject</label><br>
+            <input id="subject" name="subject" type="text" placeholder="Project Information" required minlength="3" maxlength="100"><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" placeholder="Write a message" required minlength="10"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            
+            <p> Topic </p>
+            <label><input type="radio" name="topic" value="project" required>Project</label>
+            <label><input type="radio" name="topic" value="job" required>Job</label>
+            <label><input type="radio" name="topic" value="other" required>Other</label><br><br>
+
+            <p>Intrests</p>
+            <label><input type="checkbox" name="interests" value="HTML"> HTML</label>
+            <label><input type="checkbox" name="interests" value="CSS"> CSS</label>
+            <label><input type="checkbox" name="interests" value="JavaScript"> JavaScript</label><br><br>
+
+            <label for="date">Best date to contact</label><br>
+            <input id="date" name="date" type="date"><br><br>
+
+            <label for="file">Attach a file (optional)</label><br>
+            <input id="file" name="file" type="file" accept=".pdf, .jpg,.jpeg"><br><br>
+        </fieldset>
+
+        <label>
+            <input type="checkbox" name="accept" required>
+            I agree to the terms and conditions
+        </label><br><br>
+
+        <button type="submit">Send Message</button>
+        <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
